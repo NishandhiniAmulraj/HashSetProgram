@@ -10,11 +10,13 @@ namespace HashSetProgram
     {
         static void Main(string[] args)
         {
-            HashSet<string> employees = new HashSet<string>();
-            employees.Add("Abi");
-            employees.Add("Catherine");
-            employees.Add("Shiny");
-            employees.Add("Abi");
+            HashSet<string> employees = new HashSet<string>
+            {
+                "Abi",
+                "Catherine",
+                "Shiny",
+                "Abi"
+            };
 
             Console.WriteLine($"Count after adding employees: {employees.Count}"); // Outputs 3
 
